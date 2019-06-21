@@ -1,0 +1,52 @@
+﻿<Window x:Class="_18_WPF_Documents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18_WPF_Documents"
+        mc:Ignorable="d"
+               Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <FlowDocumentReader>
+            <FlowDocument>
+                <Paragraph>
+                    <Span>
+                        <Bold>Checklist for good programming</Bold>
+                    </Span>
+                </Paragraph>
+                <List FontSize="12">
+                    <ListItem>
+                        <Paragraph>Identifiers:</Paragraph>
+                        <List MarkerStyle="Decimal">
+                            <ListItem>
+                                <Paragraph>One-letter</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Names like
+                                    <Span Foreground="Blue">flag</Span> and
+                                    <Span Foreground="Blue">name</Span> ...
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Consaider multyword</Paragraph>
+                            </ListItem>
+                        </List>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Bare literals ...</Paragraph>
+                        <List MarkerStyle="Decimal">
+                            <ListItem>
+                                <Paragraph>Don't use ...</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Don't use
+                                    <Span Foreground="Blue">sizeoff()</Span> ...
+                                </Paragraph>
+                            </ListItem>
+                        </List>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
